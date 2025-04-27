@@ -4,6 +4,8 @@ metadata:
   name: linkding-data
   namespace: linkding
 spec:
+  selector:
+    app: linkding
   accessModes:
     - ReadWriteOnce
   resources:
