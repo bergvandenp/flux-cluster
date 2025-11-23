@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - nextcloud-secrets.yaml
   - namespace.yaml
+  - psql-pv.yaml
