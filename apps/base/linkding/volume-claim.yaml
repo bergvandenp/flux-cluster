@@ -1,4 +1,25 @@
 apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgres-volume
+  namespace: linkding
+  labels:
+    type: local
+    app: postgres
+spec:
+  storageClassName: manual
+  persistentVolumeReclaimPolicy: Retain
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: /data/linkding
+  claimRef:
+    namespace: linkding
+    name: linkding-data-pvc
+---
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: linkding-data-pvc
