@@ -5,3 +5,4 @@ resources:
   - ../../base/nextcloud/
 patchesStrategicMerge:
   - psql-pv.yaml
+namespace: nextcloud-staging

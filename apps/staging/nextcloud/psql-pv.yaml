@@ -3,8 +3,20 @@ kind: PersistentVolume
 metadata:
   name: postgres-volume
   labels:
-    type: local
     app: postgres
 spec:
   hostPath:
     path: /data/postgresql-nextcloud-staging
+  capacity:
+    storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-volume-claim
+  labels:
+    app: postgress
+spec:
+  resources:
+    requests:
+      storage: 1Gi
