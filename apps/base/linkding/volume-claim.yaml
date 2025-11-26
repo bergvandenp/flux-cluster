@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: postgres-volume
-  namespace: linkding
+  name: postgres-volume-linkding
   labels:
     type: local
     app: postgres
