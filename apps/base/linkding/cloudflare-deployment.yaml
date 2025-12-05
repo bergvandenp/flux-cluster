@@ -59,4 +59,4 @@ spec:
             name: cloudflared
             items:
               - key: config.yaml
-                path: cloudflare-configmap.yaml
+                path: config.yaml
