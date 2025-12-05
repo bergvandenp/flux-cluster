@@ -7,3 +7,5 @@ resources:
   - volume-claim.yaml
   - ingress.yaml
   - cloudflare-tunnel-secret.yaml
+  - cloudflare-configmap.yaml
+  - cloudflare-deployment.yaml
