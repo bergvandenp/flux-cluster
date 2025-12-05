@@ -2,3 +2,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - psql-pv.yaml
+  - postgres-deployment.yaml
+  - postgres-secret.yaml

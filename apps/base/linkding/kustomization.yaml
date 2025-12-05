@@ -6,3 +6,4 @@ resources:
   - service.yaml
   - volume-claim.yaml
   - ingress.yaml
+  - cloudflare-tunnel-secret.yaml
